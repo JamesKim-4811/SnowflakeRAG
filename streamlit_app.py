@@ -34,9 +34,9 @@ COLUMNS = [
 ]
 
 CONNECTION_PARAMETERS = {
-    "account": os.environ["SNOWFLAKE_ACCOUNT"],
-    "user": os.environ["SNOWFLAKE_USER"],
-    "password": os.environ["SNOWFLAKE_USER_PASSWORD"],
+    "account": "nkjxbxt-vtb54128",
+    "user": "jkim189",
+    "password": "!Jk8574811",
     "role": "ACCOUNTADMIN",
     "database": "CC_QUICKSTART_CORTEX_SEARCH_DOCS",
     "warehouse": "COMPUTE_WH",
