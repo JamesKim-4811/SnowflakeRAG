@@ -54,7 +54,7 @@ def config_options():
 
     st.sidebar.selectbox('Select your model:',(
                                     'mistral-large2',
-                                     'gemma-7b'), key="model_name")
+                                     ), key="model_name")
 
     categories = session.sql("select category from docs_chunks_table group by category").collect()
 
