@@ -1,0 +1,4 @@
+snowflake.core
+python
+snowflake-snowpark-python
+streamlit
