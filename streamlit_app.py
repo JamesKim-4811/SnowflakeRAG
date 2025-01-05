@@ -1,3 +1,9 @@
+import os
+from dotenv import load_dotenv
+import pprint
+
+from snowflake.snowpark import Session
+
 import streamlit as st # Import python packages
 from snowflake.snowpark.context import get_active_session
 
@@ -5,6 +11,8 @@ from snowflake.core import Root
 
 import pandas as pd
 import json
+
+load_dotenv()
 
 pd.set_option("max_colwidth",None)
 
@@ -25,8 +33,18 @@ COLUMNS = [
     "category"
 ]
 
-session = get_active_session()
-root = Root(session)                         
+CONNECTION_PARAMETERS = {
+    "account": os.environ["SNOWFLAKE_ACCOUNT"],
+    "user": os.environ["SNOWFLAKE_USER"],
+    "password": os.environ["SNOWFLAKE_USER_PASSWORD"],
+    "role": "ACCOUNTADMIN",
+    "database": "CC_QUICKSTART_CORTEX_SEARCH_DOCS",
+    "warehouse": "COMPUTE_WH",
+    "schema": "DATA",
+}
+
+session = Session.builder.configs(CONNECTION_PARAMETERS).create()
+root = Root(session)                    
 
 svc = root.databases[CORTEX_SEARCH_DATABASE].schemas[CORTEX_SEARCH_SCHEMA].cortex_search_services[CORTEX_SEARCH_SERVICE]
    
