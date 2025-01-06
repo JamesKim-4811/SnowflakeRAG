@@ -35,17 +35,21 @@ COLUMNS = [
     "category"
 ]
 
-CONNECTION_PARAMETERS = {
-    "account": "nkjxbxt-vtb54128",
-    "user": "jkim189",
-    "password": "!Jk8574811",
-    "role": "ACCOUNTADMIN",
-    "database": "CC_QUICKSTART_CORTEX_SEARCH_DOCS",
-    "warehouse": "COMPUTE_WH",
-    "schema": "DATA",
-}
+@st.cache_resource
+def get_snowpark_session():
+    connection_parameters = {
+        "account": os.environ["SNOWFLAKE_ACCOUNT"],
+        "user": os.environ["SNOWFLAKE_USER"],
+        "password": os.environ["SNOWFLAKE_PASSWORD"],
+        "role": "ACCOUNTADMIN",
+        "database": "CC_QUICKSTART_CORTEX_SEARCH_DOCS",
+        "warehouse": "COMPUTE_WH",
+        "schema": "DATA",
+    }
+    return Session.builder.configs(connection_parameters).create()
 
-session = Session.builder.configs(CONNECTION_PARAMETERS).create()
+# Use the cached session
+session = get_snowpark_session()
 root = Root(session)                    
 
 svc = root.databases[CORTEX_SEARCH_DATABASE].schemas[CORTEX_SEARCH_SCHEMA].cortex_search_services[CORTEX_SEARCH_SERVICE]
@@ -65,6 +69,8 @@ def config_options():
         cat_list.append(cat.CATEGORY)
             
     st.sidebar.selectbox('Select what products you are looking for', cat_list, key = "category_value")
+
+    st.sidebar.checkbox('Use your own documents as context?', key="use_docs", value = True)
 
     st.sidebar.checkbox('Do you want that I remember the chat history?', key="use_chat_history", value = True)
 
@@ -130,47 +136,78 @@ def summarize_question_with_history(chat_history, question):
 
 def create_prompt (myquestion):
 
-    if st.session_state.use_chat_history:
-        chat_history = get_chat_history()
+    if st.session_state.use_docs:
+        if st.session_state.use_chat_history:
+            chat_history = get_chat_history()
 
-        if chat_history != []: #There is chat_history, so not first question
-            question_summary = summarize_question_with_history(chat_history, myquestion)
-            prompt_context =  get_similar_chunks_search_service(question_summary)
+            if chat_history != []: #There is chat_history, so not first question
+                question_summary = summarize_question_with_history(chat_history, myquestion)
+                prompt_context =  get_similar_chunks_search_service(question_summary)
+            else:
+                prompt_context = get_similar_chunks_search_service(myquestion) #First question when using history
         else:
-            prompt_context = get_similar_chunks_search_service(myquestion) #First question when using history
-    else:
-        prompt_context = get_similar_chunks_search_service(myquestion)
-        chat_history = ""
+            prompt_context = get_similar_chunks_search_service(myquestion)
+            chat_history = ""
   
-    prompt = f"""
-           You are an expert chat assistance that extracs information from the CONTEXT provided
-           between <context> and </context> tags.
-           You offer a chat experience considering the information included in the CHAT HISTORY
-           provided between <chat_history> and </chat_history> tags..
-           When ansering the question contained between <question> and </question> tags
-           be concise and do not hallucinate. 
-           If you don´t have the information just say so.
-           
-           Do not mention the CONTEXT used in your answer.
-           Do not mention the CHAT HISTORY used in your asnwer.
+        prompt = f"""
+            You are an expert chat assistance that extracs information from the CONTEXT provided
+            between <context> and </context> tags.
+            You offer a chat experience considering the information included in the CHAT HISTORY
+            provided between <chat_history> and </chat_history> tags..
+            When ansering the question contained between <question> and </question> tags
+            be concise and do not hallucinate. 
+            If you don´t have the information just say so.
+            
+            Do not mention the CONTEXT used in your answer.
+            Do not mention the CHAT HISTORY used in your asnwer.
 
-           Only anwer the question if you can extract it from the CONTEXT provideed.
-           
-           <chat_history>
-           {chat_history}
-           </chat_history>
-           <context>          
-           {prompt_context}
-           </context>
-           <question>  
-           {myquestion}
-           </question>
-           Answer: 
-           """
-    
-    json_data = json.loads(prompt_context)
+            Only anwer the question if you can extract it from the CONTEXT provideed.
+            
+            <chat_history>
+            {chat_history}
+            </chat_history>
+            <context>          
+            {prompt_context}
+            </context>
+            <question>  
+            {myquestion}
+            </question>
+            Answer: 
+            """
+        
+        json_data = json.loads(prompt_context)
 
-    relative_paths = set(item['relative_path'] for item in json_data['results'])
+        relative_paths = set(item['relative_path'] for item in json_data['results'])
+
+    else:     
+        if st.session_state.use_chat_history:
+            chat_history = get_chat_history()
+
+            if chat_history != []: #There is chat_history, so not first question
+                question_summary = summarize_question_with_history(chat_history, myquestion)
+                prompt_context =  get_similar_chunks_search_service(question_summary)
+            else:
+                prompt_context = get_similar_chunks_search_service(myquestion) #First question when using history
+        else:
+            prompt_context = get_similar_chunks_search_service(myquestion)
+            chat_history = ""
+        prompt = f"""
+            You offer a chat experience considering the information included in the CHAT HISTORY
+            provided between <chat_history> and </chat_history> tags..
+            When ansering the question contained between <question> and </question> tags
+            be concise. 
+            
+            Do not mention the CHAT HISTORY used in your asnwer.
+
+            <chat_history>
+            {chat_history}
+            </chat_history>
+            <question>  
+            {myquestion}
+            </question>
+            Answer: 
+            """
+        relative_paths = "None"
 
     return prompt, relative_paths
 
