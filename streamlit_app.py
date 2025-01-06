@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+import pprint
+
 import streamlit as st # Import python packages
 from snowflake.snowpark.context import get_active_session
 
@@ -8,6 +12,10 @@ import pandas as pd
 import json
 
 pd.set_option("max_colwidth",None)
+
+from snowflake.snowpark import Session
+
+load_dotenv()
 
 ### Default Values
 NUM_CHUNKS = 3 # Num-chunks provided as context. Play with this to check how it affects your accuracy
@@ -27,8 +35,18 @@ COLUMNS = [
     "category"
 ]
 
-session = get_active_session()
-root = Root(session)                         
+CONNECTION_PARAMETERS = {
+    "account": "nkjxbxt-vtb54128",
+    "user": "jkim189",
+    "password": "!Jk8574811",
+    "role": "ACCOUNTADMIN",
+    "database": "CC_QUICKSTART_CORTEX_SEARCH_DOCS",
+    "warehouse": "COMPUTE_WH",
+    "schema": "DATA",
+}
+
+session = Session.builder.configs(CONNECTION_PARAMETERS).create()
+root = Root(session)                    
 
 svc = root.databases[CORTEX_SEARCH_DATABASE].schemas[CORTEX_SEARCH_SCHEMA].cortex_search_services[CORTEX_SEARCH_SERVICE]
    
@@ -125,7 +143,7 @@ def create_prompt (myquestion):
         chat_history = ""
   
     prompt = f"""
-           You are an expert chat assistance that extracts information from the CONTEXT provided
+           You are an expert chat assistance that extracs information from the CONTEXT provided
            between <context> and </context> tags.
            You offer a chat experience considering the information included in the CHAT HISTORY
            provided between <chat_history> and </chat_history> tags..
