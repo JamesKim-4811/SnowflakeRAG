@@ -18,19 +18,19 @@ from snowflake.snowpark import Session
 load_dotenv()
 
 ### Default Values
-NUM_CHUNKS = 3 # Num-chunks provided as context. Play with this to check how it affects your accuracy
+NUM_CHUNKS = 10 # Num-chunks provided as context. Play with this to check how it affects your accuracy
 slide_window = 7 # how many last conversations to remember. This is the slide window.
 
 # service parameters
-CORTEX_SEARCH_DATABASE = "CC_QUICKSTART_CORTEX_SEARCH_DOCS"
-CORTEX_SEARCH_SCHEMA = "DATA"
-CORTEX_SEARCH_SERVICE = "CC_SEARCH_SERVICE_CS"
+CORTEX_SEARCH_DATABASE = "SEMANTIC_SEARCH_DB"
+CORTEX_SEARCH_SCHEMA = "DOCS_SCHEMA"
+CORTEX_SEARCH_SERVICE = "SEMANTIC_CORTEX_SEARCH_SERVICE"
 ######
 ######
 
 # columns to query in the service
 COLUMNS = [
-    "chunk",
+    "doc_text",
     "relative_path",
     "category"
 ]
@@ -42,9 +42,9 @@ def get_snowpark_session():
         "user": os.environ["SNOWFLAKE_USER"],
         "password": os.environ["SNOWFLAKE_USER_PASSWORD"],
         "role": "ACCOUNTADMIN",
-        "database": "CC_QUICKSTART_CORTEX_SEARCH_DOCS",
-        "warehouse": "COMPUTE_WH",
-        "schema": "DATA",
+        "database": "SEMANTIC_SEARCH_DB",
+        "warehouse": "SEMANTIC_WH",
+        "schema": "DOCS_SCHEMA",
     }
     return Session.builder.configs(connection_parameters).create()
 
@@ -62,7 +62,7 @@ def config_options():
                                     'mistral-large2',
                                      ), key="model_name")
 
-    categories = session.table('docs_chunks_table').select('category').distinct().collect()
+    categories = session.table('education_docs').select('category').distinct().collect()
 
     cat_list = ['ALL']
     for cat in categories:
@@ -92,9 +92,9 @@ def get_similar_chunks_search_service(query):
         filter_obj = {"@eq": {"category": st.session_state.category_value} }
         response = svc.search(query, COLUMNS, filter=filter_obj, limit=NUM_CHUNKS)
 
-    st.sidebar.json(response.json())
+    st.sidebar.json(response.model_dump_json())
     
-    return response.json()  
+    return response.model_dump_json()  
 
 def get_chat_history():
 #Get the history from the st.session_stage.messages according to the slide window parameter
@@ -262,16 +262,10 @@ def main():
                             cmd2 = f"select GET_PRESIGNED_URL(@docs, '{path}', 360) as URL_LINK from directory(@docs)"
                             df_url_link = session.sql(cmd2).to_pandas()
                             url_link = df_url_link._get_value(0,'URL_LINK')
-                            
+                
                             display_url = f"Doc: [{path}]({url_link})"
-                            
-                            st.sidebar.markdown(display_url)
                             st.sidebar.markdown(url_link)
-                            st.sidebar.markdown(cmd2)
-                            st.sidebar.markdown(df_url_link)
-
-
-
+                            st.sidebar.markdown(display_url)
 
         
         st.session_state.messages.append({"role": "assistant", "content": response})

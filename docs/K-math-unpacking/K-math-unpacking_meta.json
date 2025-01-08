@@ -1,25 +1,25 @@
 {
   "table_of_contents": [
     {
-      "title": "1\nst Grade Mathematics \u25cf Unpacked Contents",
+      "title": "Kindergarten Mathematics \u25cf Unpacked Contents",
       "heading_level": null,
       "page_id": 0,
       "polygon": [
         [
-          49.306640625,
-          121.69775390625
+          49.0166015625,
+          108.10107421875
         ],
         [
-          275.9835205078125,
-          121.69775390625
+          297.1241760253906,
+          108.10107421875
         ],
         [
-          275.9835205078125,
-          134.69677734375
+          297.1241760253906,
+          121.10009765625
         ],
         [
-          49.306640625,
-          134.69677734375
+          49.0166015625,
+          121.10009765625
         ]
       ]
     },
@@ -29,20 +29,20 @@
       "page_id": 0,
       "polygon": [
         [
-          59.89306640625,
-          226.9599609375
+          59.31298828125,
+          213.662109375
         ],
         [
-          256.974609375,
-          226.9599609375
+          255.6345977783203,
+          213.662109375
         ],
         [
-          256.974609375,
-          239.5107421875
+          255.6345977783203,
+          225.9140625
         ],
         [
-          59.89306640625,
-          239.5107421875
+          59.31298828125,
+          225.9140625
         ]
       ]
     },
@@ -52,20 +52,20 @@
       "page_id": 0,
       "polygon": [
         [
-          59.98974609375,
-          300.322265625
+          60.37646484375,
+          285.8291015625
         ],
         [
-          189.87890625,
-          300.322265625
+          190.265625,
+          285.8291015625
         ],
         [
-          189.87890625,
-          312.275390625
+          190.265625,
+          297.7822265625
         ],
         [
-          59.98974609375,
-          312.275390625
+          60.37646484375,
+          297.7822265625
         ]
       ]
     },
@@ -75,20 +75,20 @@
       "page_id": 0,
       "polygon": [
         [
-          60.08642578125,
-          383.994140625
+          59.8447265625,
+          370.248046875
         ],
         [
-          191.8125,
-          383.994140625
+          190.7490234375,
+          370.248046875
         ],
         [
-          191.8125,
-          396.0188751220703
+          190.7490234375,
+          382.798828125
         ],
         [
-          60.08642578125,
-          396.0188751220703
+          59.8447265625,
+          382.798828125
         ]
       ]
     },
@@ -98,66 +98,20 @@
       "page_id": 0,
       "polygon": [
         [
-          60.27978515625,
-          420.75
+          59.98974609375,
+          406.40625
         ],
         [
-          218.32606506347656,
-          420.75
+          218.3385772705078,
+          406.40625
         ],
         [
-          218.32606506347656,
-          432.703125
+          218.3385772705078,
+          418.45887756347656
         ],
         [
-          60.27978515625,
-          432.703125
-        ]
-      ]
-    },
-    {
-      "title": "North Carolina Course of Study \u2013 1\nst Grade Standards",
-      "heading_level": null,
-      "page_id": 1,
-      "polygon": [
-        [
-          219.02000427246094,
-          55.05908203125
-        ],
-        [
-          577.37109375,
-          55.05908203125
-        ],
-        [
-          577.37109375,
-          71.2705078125
-        ],
-        [
-          219.02000427246094,
-          71.2705078125
-        ]
-      ]
-    },
-    {
-      "title": "Standards for Mathematical Practice",
-      "heading_level": null,
-      "page_id": 1,
-      "polygon": [
-        [
-          308.021484375,
-          78.96533203125
-        ],
-        [
-          487.65234375,
-          78.96533203125
-        ],
-        [
-          487.65234375,
-          91.06787109375
-        ],
-        [
-          308.021484375,
-          91.06787109375
+          59.98974609375,
+          418.45887756347656
         ]
       ]
     },
@@ -167,365 +121,388 @@
       "page_id": 2,
       "polygon": [
         [
-          309.6499938964844,
-          49.53076171875
+          307.248046875,
+          35.1309814453125
         ],
         [
-          485.33203125,
-          49.53076171875
+          484.9453125,
+          35.1309814453125
         ],
         [
-          485.33203125,
-          61.55859375
+          484.9453125,
+          47.73779296875
         ],
         [
-          309.6499938964844,
-          61.55859375
+          307.248046875,
+          47.73779296875
         ]
       ]
     },
     {
-      "title": "Operations and Algebraic Thinking",
+      "title": "Counting and Cardinality",
       "heading_level": null,
       "page_id": 4,
       "polygon": [
         [
-          312.85546875,
-          49.53076171875
+          335.671875,
+          35.448486328125
         ],
         [
-          482.23828125,
-          49.53076171875
+          457.1015625,
+          35.448486328125
         ],
         [
-          482.23828125,
-          61.93212890625
+          457.1015625,
+          47.849853515625
         ],
         [
-          312.85546875,
-          61.93212890625
+          335.671875,
+          47.849853515625
         ]
       ]
     },
     {
-      "title": "Represent and solve problems.",
+      "title": "\u2022 Counting to 100 by tens.",
       "heading_level": null,
-      "page_id": 5,
+      "page_id": 4,
       "polygon": [
         [
-          38.7685546875,
-          50.464599609375
+          54.28564453125,
+          95.625
         ],
         [
-          190.9423828125,
-          50.464599609375
+          188.33203125,
+          95.625
         ],
         [
-          190.9423828125,
-          62.567138671875
+          188.33203125,
+          107.1298828125
         ],
         [
-          38.7685546875,
-          62.567138671875
+          54.28564453125,
+          107.1298828125
         ]
       ]
     },
     {
-      "title": "Represent and solve problems.",
+      "title": "Count to tell the number of objects.",
       "heading_level": null,
       "page_id": 6,
       "polygon": [
         [
-          40.3154296875,
-          61.78271484375
+          39.97705078125,
+          36.83056640625
         ],
         [
-          189.9755859375,
-          61.78271484375
+          211.921875,
+          36.83056640625
         ],
         [
-          189.9755859375,
-          73.6611328125
+          211.921875,
+          48.63427734375
         ],
         [
-          40.3154296875,
-          73.6611328125
+          39.97705078125,
+          48.63427734375
         ]
       ]
     },
     {
-      "title": "Add and subtract within 20.",
+      "title": "Count to tell the number of objects.",
       "heading_level": null,
-      "page_id": 10,
+      "page_id": 7,
       "polygon": [
         [
-          37.6083984375,
-          51.286376953125
+          39.49365234375,
+          36.755859375
         ],
         [
-          172.1865234375,
-          51.286376953125
+          209.98828125,
+          36.755859375
         ],
         [
-          172.1865234375,
-          62.791259765625
+          209.98828125,
+          48.48486328125
         ],
         [
-          37.6083984375,
-          62.791259765625
+          39.49365234375,
+          48.48486328125
         ]
       ]
     },
     {
-      "title": "Clarification Checking for Understanding\nIn this standard, students develop increasingly sophisticated strategies to become more",
+      "title": "Compare numbers.",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          40.774658203125,
+          37.1480712890625
+        ],
+        [
+          132.5847625732422,
+          37.1480712890625
+        ],
+        [
+          132.5847625732422,
+          48.48486328125
+        ],
+        [
+          40.774658203125,
+          48.48486328125
+        ]
+      ]
+    },
+    {
+      "title": "Understand addition and subtraction.",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          37.8984375,
+          59.877685546875
+        ],
+        [
+          221.96578979492188,
+          59.877685546875
+        ],
+        [
+          221.96578979492188,
+          71.606689453125
+        ],
+        [
+          37.8984375,
+          71.606689453125
+        ]
+      ]
+    },
+    {
+      "title": "Understand addition and subtraction.",
       "heading_level": null,
       "page_id": 10,
       "polygon": [
         [
-          41.63999938964844,
-          148.05587768554688
+          39.30029296875,
+          36.4010009765625
         ],
         [
-          594.271728515625,
-          148.05587768554688
+          221.96578979492188,
+          36.4010009765625
         ],
         [
-          594.271728515625,
-          170.01589965820312
+          221.96578979492188,
+          48.8583984375
         ],
         [
-          41.63999938964844,
-          170.01589965820312
+          39.30029296875,
+          48.8583984375
+        ]
+      ]
+    },
+    {
+      "title": "Understand addition and subtraction.",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          39.05859375,
+          59.952392578125
+        ],
+        [
+          221.96578979492188,
+          59.952392578125
+        ],
+        [
+          221.96578979492188,
+          71.083740234375
+        ],
+        [
+          39.05859375,
+          71.083740234375
+        ]
+      ]
+    },
+    {
+      "title": "Understand addition and subtraction.",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          38.865234375,
+          36.867919921875
+        ],
+        [
+          221.96578979492188,
+          36.867919921875
+        ],
+        [
+          221.96578979492188,
+          48.596923828125
+        ],
+        [
+          38.865234375,
+          48.596923828125
         ]
       ]
     },
     {
       "title": "Number and Operations in Base Ten",
       "heading_level": null,
-      "page_id": 12,
-      "polygon": [
-        [
-          309.5299987792969,
-          49.941650390625
-        ],
-        [
-          484.9453125,
-          49.941650390625
-        ],
-        [
-          484.9453125,
-          61.745361328125
-        ],
-        [
-          309.5299987792969,
-          61.745361328125
-        ]
-      ]
-    },
-    {
-      "title": "Understand place value.",
-      "heading_level": null,
-      "page_id": 13,
-      "polygon": [
-        [
-          38.62353515625,
-          50.763427734375
-        ],
-        [
-          158.361328125,
-          50.763427734375
-        ],
-        [
-          158.361328125,
-          62.865966796875
-        ],
-        [
-          38.62353515625,
-          62.865966796875
-        ]
-      ]
-    },
-    {
-      "title": "Use place value understanding and properties of operations.",
-      "heading_level": null,
       "page_id": 15,
       "polygon": [
         [
-          39.9287109375,
-          50.57666015625
+          309.375,
+          35.822021484375
         ],
         [
-          330.64453125,
-          50.57666015625
+          483.3984375,
+          35.822021484375
         ],
         [
-          330.64453125,
-          62.3056640625
+          483.3984375,
+          47.775146484375
         ],
         [
-          39.9287109375,
-          62.3056640625
-        ]
-      ]
-    },
-    {
-      "title": "Use place value understanding and properties of operations.",
-      "heading_level": null,
-      "page_id": 16,
-      "polygon": [
-        [
-          39.7353515625,
-          50.763427734375
-        ],
-        [
-          330.2578125,
-          50.763427734375
-        ],
-        [
-          330.2578125,
-          62.118896484375
-        ],
-        [
-          39.7353515625,
-          62.118896484375
+          309.375,
+          47.775146484375
         ]
       ]
     },
     {
       "title": "Measurement and Data",
       "heading_level": null,
-      "page_id": 19,
+      "page_id": 16,
       "polygon": [
         [
-          339.15234375,
-          50.165771484375
+          340.69921875,
+          35.48583984375
         ],
         [
-          450.9140625,
-          50.165771484375
+          452.07421875,
+          35.48583984375
         ],
         [
-          450.9140625,
-          61.521240234375
+          452.07421875,
+          47.6630859375
         ],
         [
-          339.15234375,
-          61.521240234375
-        ]
-      ]
-    },
-    {
-      "title": "Measure lengths.",
-      "heading_level": null,
-      "page_id": 20,
-      "polygon": [
-        [
-          38.9619140625,
-          50.6513671875
-        ],
-        [
-          125.3935546875,
-          50.6513671875
-        ],
-        [
-          125.3935546875,
-          62.23095703125
-        ],
-        [
-          38.9619140625,
-          62.23095703125
+          340.69921875,
+          47.6630859375
         ]
       ]
     },
     {
       "title": "Geometry",
       "heading_level": null,
+      "page_id": 18,
+      "polygon": [
+        [
+          370.86328125,
+          36.08349609375
+        ],
+        [
+          420.75,
+          36.08349609375
+        ],
+        [
+          420.75,
+          47.513671875
+        ],
+        [
+          370.86328125,
+          47.513671875
+        ]
+      ]
+    },
+    {
+      "title": "Return to Standards",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          666.5800170898438,
+          417.1640625
+        ],
+        [
+          756.03515625,
+          417.1640625
+        ],
+        [
+          756.03515625,
+          427.921875
+        ],
+        [
+          666.5800170898438,
+          427.921875
+        ]
+      ]
+    },
+    {
+      "title": "Analyze, compare, create, and compose shapes.",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          38.7685546875,
+          37.2227783203125
+        ],
+        [
+          271.4765625,
+          37.2227783203125
+        ],
+        [
+          271.4765625,
+          48.671630859375
+        ],
+        [
+          38.7685546875,
+          48.671630859375
+        ]
+      ]
+    },
+    {
+      "title": "Analyze, compare, create, and compose shapes.",
+      "heading_level": null,
       "page_id": 22,
       "polygon": [
         [
-          370.669921875,
-          49.904296875
+          38.5751953125,
+          36.942626953125
         ],
         [
-          420.75,
-          49.904296875
+          272.63671875,
+          36.942626953125
         ],
         [
-          420.75,
-          61.78271484375
+          272.63671875,
+          48.148681640625
         ],
         [
-          370.669921875,
-          61.78271484375
-        ]
-      ]
-    },
-    {
-      "title": "Reason with shapes and their attributes",
-      "heading_level": null,
-      "page_id": 23,
-      "polygon": [
-        [
-          38.14013671875,
-          50.72607421875
-        ],
-        [
-          233.771484375,
-          50.72607421875
-        ],
-        [
-          233.771484375,
-          62.52978515625
-        ],
-        [
-          38.14013671875,
-          62.52978515625
-        ]
-      ]
-    },
-    {
-      "title": "Reason with shapes and their attributes\nNC.1.G.3 Partition circles and rectangles into two and four equal shares.\n\u2022 Describe the shares as halves and fourths, as half of and fourth of.\n\u2022 Describe the whole as two of, or four of the shares.\n\u2022 Explain that decomposing into more equal shares creates smaller shares.\nClarification Checking for Understanding\nIn this standard, students will be able to partition rectangles and circles of \nvarious sizes into halves and fourths. Students should recognize that when \nsomething is cut into two equal pieces, each piece will equal one-half of its \noriginal whole. Students should also recognize that halves of two different \nwholes are not necessarily the same size, and they should understand that \ndecomposing equal shares into more equal shares results in smaller equal \nshares. \nStudents should partition regions into equal shares using a context (e.g., \ncookies, pies, pizza). Through experiences with multiple representations, \nstudents should use the words, halves and fourths, and the phrases half of \nand fourth of to describe their thinking and solutions. Working with the \"the \nwhole\", students understand that \"the whole\" is composed of two halves or \nfour fourths.\nHow can you and a friend share equally (partition) this piece of paper so that \nyou both have the same amount of paper to paint a picture? \nPossible responses:\nStudent A\nI would split the paper right down the \nmiddle. That gives us 2 halves. I \nhave half of the paper and my friend \nhas the other half of the paper. \nStudent B\nI would split it from corner to corner \n(diagonally). She gets half of the \npaper and I get half of the paper. \nSee, if we cut on the line, the parts \nare the same size.\n \nYou can have only one slice of pizza. Which pizza should you pick your slice \nfrom if you want the biggest piece of pizza? The pizzas are the same size and \nare each divided into equal pieces. Explain how you know.\nReturn to Standards\nPossible response:\nI would get more pizza if I took a \nslice from the pizza that is cut \ninto two equal parts. The more \nequal slices there are, the \nsmaller the pieces get. I \nwouldn't get as much pizza if I \nonly got a fourth of the pizza \ninstead of half of the pizza.",
-      "heading_level": null,
-      "page_id": 24,
-      "polygon": [
-        [
-          34.8046875,
-          48.41015625
-        ],
-        [
-          759.515625,
-          48.41015625
-        ],
-        [
-          759.515625,
-          559.1318702697754
-        ],
-        [
-          34.8046875,
-          559.1318702697754
+          38.5751953125,
+          48.148681640625
         ]
       ]
     },
     {
       "title": "",
       "heading_level": null,
-      "page_id": 25,
+      "page_id": 24,
       "polygon": [
         [
-          145.986328125,
-          62.0068359375
+          142.69921875,
+          48.33544921875
         ],
         [
-          640.40625,
-          62.0068359375
+          643.88671875,
+          48.33544921875
         ],
         [
-          640.40625,
-          95.923828125
+          643.88671875,
+          84.34423828125
         ],
         [
-          145.986328125,
-          95.923828125
+          142.69921875,
+          84.34423828125
         ]
       ]
     }
@@ -537,11 +514,11 @@
       "block_counts": [
         [
           "Span",
-          56
+          52
         ],
         [
           "Line",
-          21
+          19
         ],
         [
           "Text",
@@ -568,23 +545,23 @@
       "block_counts": [
         [
           "Span",
-          98
+          108
         ],
         [
           "Line",
-          45
-        ],
-        [
-          "Text",
-          4
+          48
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "SectionHeader",
-          2
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
         ]
       ],
       "block_metadata": {
@@ -599,11 +576,11 @@
       "block_counts": [
         [
           "Span",
-          164
+          138
         ],
         [
           "Line",
-          64
+          58
         ],
         [
           "PageFooter",
@@ -630,11 +607,11 @@
       "block_counts": [
         [
           "Span",
-          59
+          52
         ],
         [
           "Line",
-          24
+          20
         ],
         [
           "PageFooter",
@@ -661,11 +638,15 @@
       "block_counts": [
         [
           "Span",
-          234
+          90
         ],
         [
           "Line",
-          91
+          34
+        ],
+        [
+          "Text",
+          3
         ],
         [
           "PageFooter",
@@ -673,10 +654,14 @@
         ],
         [
           "SectionHeader",
-          1
+          2
         ],
         [
           "Table",
+          2
+        ],
+        [
+          "ListItem",
           1
         ]
       ],
@@ -692,19 +677,93 @@
       "block_counts": [
         [
           "Span",
-          102
+          61
         ],
         [
           "Line",
-          36
+          25
         ],
         [
-          "ListItem",
+          "PageFooter",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          147
+        ],
+        [
+          "Line",
+          50
+        ],
+        [
+          "Text",
           3
         ],
         [
           "PageFooter",
           3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          154
+        ],
+        [
+          "Line",
+          55
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageFooter",
+          4
         ],
         [
           "SectionHeader",
@@ -730,16 +789,141 @@
       }
     },
     {
-      "page_id": 6,
+      "page_id": 8,
       "text_extraction_method": "pdftext",
       "block_counts": [
         [
           "Span",
-          98
+          140
         ],
         [
           "Line",
-          42
+          60
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          88
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Form",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          164
+        ],
+        [
+          "Line",
+          70
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          96
+        ],
+        [
+          "Line",
+          32
         ],
         [
           "PageFooter",
@@ -769,186 +953,31 @@
       }
     },
     {
-      "page_id": 7,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          141
-        ],
-        [
-          "Line",
-          61
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "Text",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 8,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          170
-        ],
-        [
-          "Line",
-          50
-        ],
-        [
-          "PageFooter",
-          4
-        ],
-        [
-          "Table",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 9,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          94
-        ],
-        [
-          "Line",
-          33
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "Text",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 10,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          266
-        ],
-        [
-          "Line",
-          110
-        ],
-        [
-          "Text",
-          6
-        ],
-        [
-          "ListItem",
-          6
-        ],
-        [
-          "SectionHeader",
-          2
-        ],
-        [
-          "PageFooter",
-          2
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "ListGroup",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 11,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          177
-        ],
-        [
-          "Line",
-          68
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Table",
-          2
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
       "page_id": 12,
       "text_extraction_method": "pdftext",
       "block_counts": [
         [
           "Span",
-          124
+          78
         ],
         [
           "Line",
-          49
+          29
         ],
         [
           "PageFooter",
-          4
+          3
+        ],
+        [
+          "Text",
+          2
         ],
         [
           "SectionHeader",
           1
         ],
         [
-          "Table",
+          "Form",
           1
         ]
       ],
@@ -964,34 +993,18 @@
       "block_counts": [
         [
           "Span",
-          171
+          89
         ],
         [
           "Line",
-          62
-        ],
-        [
-          "ListItem",
-          3
+          34
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "SectionHeader",
-          1
-        ],
-        [
-          "Text",
-          1
-        ],
-        [
-          "Form",
-          1
-        ],
-        [
-          "ListGroup",
+          "Table",
           1
         ]
       ],
@@ -1007,11 +1020,11 @@
       "block_counts": [
         [
           "Span",
-          61
+          95
         ],
         [
           "Line",
-          25
+          36
         ],
         [
           "PageFooter",
@@ -1038,30 +1051,26 @@
       "block_counts": [
         [
           "Span",
-          104
+          83
         ],
         [
           "Line",
-          43
+          31
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "Text",
-          2
-        ],
-        [
           "SectionHeader",
           1
         ],
         [
-          "ListItem",
+          "Table",
           1
         ],
         [
-          "Table",
+          "Text",
           1
         ]
       ],
@@ -1077,34 +1086,22 @@
       "block_counts": [
         [
           "Span",
-          94
+          142
         ],
         [
           "Line",
-          38
+          56
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "Text",
-          2
-        ],
-        [
-          "ListItem",
+          "Table",
           2
         ],
         [
           "SectionHeader",
-          1
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "ListGroup",
           1
         ]
       ],
@@ -1120,11 +1117,11 @@
       "block_counts": [
         [
           "Span",
-          81
+          88
         ],
         [
           "Line",
-          31
+          36
         ],
         [
           "PageFooter",
@@ -1132,10 +1129,6 @@
         ],
         [
           "Table",
-          1
-        ],
-        [
-          "Text",
           1
         ]
       ],
@@ -1151,15 +1144,19 @@
       "block_counts": [
         [
           "Span",
-          103
+          67
         ],
         [
           "Line",
-          36
+          22
         ],
         [
           "PageFooter",
           3
+        ],
+        [
+          "SectionHeader",
+          1
         ],
         [
           "Table",
@@ -1182,19 +1179,15 @@
       "block_counts": [
         [
           "Span",
-          101
+          39
         ],
         [
           "Line",
-          39
+          15
         ],
         [
           "PageFooter",
           3
-        ],
-        [
-          "SectionHeader",
-          1
         ],
         [
           "Table",
@@ -1217,38 +1210,22 @@
       "block_counts": [
         [
           "Span",
-          95
+          33
         ],
         [
           "Line",
-          35
+          12
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "Text",
-          2
-        ],
-        [
-          "ListItem",
-          2
-        ],
-        [
-          "SectionHeader",
-          1
-        ],
-        [
-          "Form",
-          1
-        ],
-        [
           "Table",
           1
         ],
         [
-          "ListGroup",
+          "SectionHeader",
           1
         ]
       ],
@@ -1264,19 +1241,27 @@
       "block_counts": [
         [
           "Span",
-          118
+          88
         ],
         [
           "Line",
-          42
+          35
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "Table",
+          "Text",
           2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
         ]
       ],
       "block_metadata": {
@@ -1291,46 +1276,11 @@
       "block_counts": [
         [
           "Span",
-          112
+          56
         ],
         [
           "Line",
-          42
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "SectionHeader",
-          1
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "Text",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 23,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          92
-        ],
-        [
-          "Line",
-          34
+          21
         ],
         [
           "PageFooter",
@@ -1349,11 +1299,42 @@
           1
         ],
         [
-          "Figure",
+          "Table",
           1
         ],
         [
           "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          52
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
           1
         ]
       ],
@@ -1369,34 +1350,7 @@
       "block_counts": [
         [
           "Span",
-          128
-        ],
-        [
-          "Line",
-          48
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "SectionHeader",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 25,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          8
+          6
         ],
         [
           "PageFooter",
@@ -1426,5 +1380,5 @@
       }
     }
   ],
-  "debug_data_path": "debug_data/1st-math-clarification"
+  "debug_data_path": "debug_data/K-math-unpacking"
 }

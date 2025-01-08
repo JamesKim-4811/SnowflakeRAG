@@ -1,25 +1,25 @@
 {
   "table_of_contents": [
     {
-      "title": "Kindergarten Mathematics \u25cf Unpacked Contents",
+      "title": "1st Grade Mathematics \u2022 Unpacked Contents",
       "heading_level": null,
       "page_id": 0,
       "polygon": [
         [
-          49.0166015625,
-          108.10107421875
+          48.75,
+          121.69775390625
         ],
         [
-          297.1241760253906,
-          108.10107421875
+          276.0,
+          121.69775390625
         ],
         [
-          297.1241760253906,
-          121.10009765625
+          276.0,
+          134.69677734375
         ],
         [
-          49.0166015625,
-          121.10009765625
+          48.75,
+          134.69677734375
         ]
       ]
     },
@@ -29,20 +29,20 @@
       "page_id": 0,
       "polygon": [
         [
-          59.31298828125,
-          213.662109375
+          59.89306640625,
+          226.9599609375
         ],
         [
-          255.6345977783203,
-          213.662109375
+          256.974609375,
+          226.9599609375
         ],
         [
-          255.6345977783203,
-          225.9140625
+          256.974609375,
+          239.5107421875
         ],
         [
-          59.31298828125,
-          225.9140625
+          59.89306640625,
+          239.5107421875
         ]
       ]
     },
@@ -52,20 +52,20 @@
       "page_id": 0,
       "polygon": [
         [
-          60.37646484375,
-          285.8291015625
+          59.98974609375,
+          300.322265625
         ],
         [
-          190.265625,
-          285.8291015625
+          189.87890625,
+          300.322265625
         ],
         [
-          190.265625,
-          297.7822265625
+          189.87890625,
+          312.275390625
         ],
         [
-          60.37646484375,
-          297.7822265625
+          59.98974609375,
+          312.275390625
         ]
       ]
     },
@@ -75,20 +75,20 @@
       "page_id": 0,
       "polygon": [
         [
-          59.8447265625,
-          370.248046875
+          60.0,
+          383.994140625
         ],
         [
-          190.7490234375,
-          370.248046875
+          191.8125,
+          383.994140625
         ],
         [
-          190.7490234375,
-          382.798828125
+          191.8125,
+          395.947265625
         ],
         [
-          59.8447265625,
-          382.798828125
+          60.0,
+          395.947265625
         ]
       ]
     },
@@ -98,20 +98,66 @@
       "page_id": 0,
       "polygon": [
         [
-          59.98974609375,
-          406.40625
+          60.0,
+          420.75
         ],
         [
-          218.3385772705078,
-          406.40625
+          219.75,
+          420.75
         ],
         [
-          218.3385772705078,
-          418.45887756347656
+          219.75,
+          432.703125
         ],
         [
-          59.98974609375,
-          418.45887756347656
+          60.0,
+          432.703125
+        ]
+      ]
+    },
+    {
+      "title": "North Carolina Course of Study - 1st Grade Standards",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          216.75,
+          55.05908203125
+        ],
+        [
+          577.37109375,
+          55.05908203125
+        ],
+        [
+          577.37109375,
+          71.2705078125
+        ],
+        [
+          216.75,
+          71.2705078125
+        ]
+      ]
+    },
+    {
+      "title": "Standards for Mathematical Practice",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          308.021484375,
+          78.96533203125
+        ],
+        [
+          487.65234375,
+          78.96533203125
+        ],
+        [
+          487.65234375,
+          91.06787109375
+        ],
+        [
+          308.021484375,
+          91.06787109375
         ]
       ]
     },
@@ -121,388 +167,365 @@
       "page_id": 2,
       "polygon": [
         [
-          307.248046875,
-          35.1309814453125
+          307.5,
+          49.53076171875
         ],
         [
-          484.9453125,
-          35.1309814453125
+          485.33203125,
+          49.53076171875
         ],
         [
-          484.9453125,
-          47.73779296875
+          485.33203125,
+          61.55859375
         ],
         [
-          307.248046875,
-          47.73779296875
+          307.5,
+          61.55859375
         ]
       ]
     },
     {
-      "title": "Counting and Cardinality",
+      "title": "Operations and Algebraic Thinking",
       "heading_level": null,
       "page_id": 4,
       "polygon": [
         [
-          335.671875,
-          35.448486328125
+          312.0,
+          49.53076171875
         ],
         [
-          457.1015625,
-          35.448486328125
+          482.23828125,
+          49.53076171875
         ],
         [
-          457.1015625,
-          47.849853515625
+          482.23828125,
+          61.93212890625
         ],
         [
-          335.671875,
-          47.849853515625
+          312.0,
+          61.93212890625
         ]
       ]
     },
     {
-      "title": "\u2022 Counting to 100 by tens.",
+      "title": "Represent and solve problems.",
       "heading_level": null,
-      "page_id": 4,
+      "page_id": 5,
       "polygon": [
         [
-          54.28564453125,
-          95.625
+          38.7685546875,
+          50.464599609375
         ],
         [
-          188.33203125,
-          95.625
+          190.9423828125,
+          50.464599609375
         ],
         [
-          188.33203125,
-          107.1298828125
+          190.9423828125,
+          62.567138671875
         ],
         [
-          54.28564453125,
-          107.1298828125
+          38.7685546875,
+          62.567138671875
         ]
       ]
     },
     {
-      "title": "Count to tell the number of objects.",
+      "title": "Represent and solve problems.",
       "heading_level": null,
       "page_id": 6,
       "polygon": [
         [
-          39.97705078125,
-          36.83056640625
+          39.75,
+          61.78271484375
         ],
         [
-          211.921875,
-          36.83056640625
+          190.5,
+          61.78271484375
         ],
         [
-          211.921875,
-          48.63427734375
+          190.5,
+          73.6611328125
         ],
         [
-          39.97705078125,
-          48.63427734375
+          39.75,
+          73.6611328125
         ]
       ]
     },
     {
-      "title": "Count to tell the number of objects.",
-      "heading_level": null,
-      "page_id": 7,
-      "polygon": [
-        [
-          39.49365234375,
-          36.755859375
-        ],
-        [
-          209.98828125,
-          36.755859375
-        ],
-        [
-          209.98828125,
-          48.48486328125
-        ],
-        [
-          39.49365234375,
-          48.48486328125
-        ]
-      ]
-    },
-    {
-      "title": "Compare numbers.",
-      "heading_level": null,
-      "page_id": 8,
-      "polygon": [
-        [
-          40.774658203125,
-          37.1480712890625
-        ],
-        [
-          132.5847625732422,
-          37.1480712890625
-        ],
-        [
-          132.5847625732422,
-          48.48486328125
-        ],
-        [
-          40.774658203125,
-          48.48486328125
-        ]
-      ]
-    },
-    {
-      "title": "Understand addition and subtraction.",
-      "heading_level": null,
-      "page_id": 9,
-      "polygon": [
-        [
-          37.8984375,
-          59.877685546875
-        ],
-        [
-          221.96578979492188,
-          59.877685546875
-        ],
-        [
-          221.96578979492188,
-          71.606689453125
-        ],
-        [
-          37.8984375,
-          71.606689453125
-        ]
-      ]
-    },
-    {
-      "title": "Understand addition and subtraction.",
+      "title": "Add and subtract within 20.",
       "heading_level": null,
       "page_id": 10,
       "polygon": [
         [
-          39.30029296875,
-          36.4010009765625
+          37.6083984375,
+          51.286376953125
         ],
         [
-          221.96578979492188,
-          36.4010009765625
+          172.1865234375,
+          51.286376953125
         ],
         [
-          221.96578979492188,
-          48.8583984375
+          172.1865234375,
+          62.791259765625
         ],
         [
-          39.30029296875,
-          48.8583984375
+          37.6083984375,
+          62.791259765625
         ]
       ]
     },
     {
-      "title": "Understand addition and subtraction.",
+      "title": "Clarification\nIn this standard, students develop increasingly sophisticated strategies to become more",
       "heading_level": null,
-      "page_id": 11,
+      "page_id": 10,
       "polygon": [
         [
-          39.05859375,
-          59.952392578125
+          39.75,
+          148.3681640625
         ],
         [
-          221.96578979492188,
-          59.952392578125
+          429.75,
+          148.3681640625
         ],
         [
-          221.96578979492188,
-          71.083740234375
+          429.75,
+          168.9873046875
         ],
         [
-          39.05859375,
-          71.083740234375
-        ]
-      ]
-    },
-    {
-      "title": "Understand addition and subtraction.",
-      "heading_level": null,
-      "page_id": 12,
-      "polygon": [
-        [
-          38.865234375,
-          36.867919921875
-        ],
-        [
-          221.96578979492188,
-          36.867919921875
-        ],
-        [
-          221.96578979492188,
-          48.596923828125
-        ],
-        [
-          38.865234375,
-          48.596923828125
+          39.75,
+          168.9873046875
         ]
       ]
     },
     {
       "title": "Number and Operations in Base Ten",
       "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          307.5,
+          49.941650390625
+        ],
+        [
+          484.9453125,
+          49.941650390625
+        ],
+        [
+          484.9453125,
+          61.745361328125
+        ],
+        [
+          307.5,
+          61.745361328125
+        ]
+      ]
+    },
+    {
+      "title": "Understand place value.",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          38.62353515625,
+          50.763427734375
+        ],
+        [
+          158.361328125,
+          50.763427734375
+        ],
+        [
+          158.361328125,
+          62.865966796875
+        ],
+        [
+          38.62353515625,
+          62.865966796875
+        ]
+      ]
+    },
+    {
+      "title": "Use place value understanding and properties of operations.",
+      "heading_level": null,
       "page_id": 15,
       "polygon": [
         [
-          309.375,
-          35.822021484375
+          39.9287109375,
+          50.57666015625
         ],
         [
-          483.3984375,
-          35.822021484375
+          330.64453125,
+          50.57666015625
         ],
         [
-          483.3984375,
-          47.775146484375
+          330.64453125,
+          62.3056640625
         ],
         [
-          309.375,
-          47.775146484375
+          39.9287109375,
+          62.3056640625
+        ]
+      ]
+    },
+    {
+      "title": "Use place value understanding and properties of operations.",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          39.7353515625,
+          50.763427734375
+        ],
+        [
+          330.2578125,
+          50.763427734375
+        ],
+        [
+          330.2578125,
+          62.118896484375
+        ],
+        [
+          39.7353515625,
+          62.118896484375
         ]
       ]
     },
     {
       "title": "Measurement and Data",
       "heading_level": null,
-      "page_id": 16,
+      "page_id": 19,
       "polygon": [
         [
-          340.69921875,
-          35.48583984375
+          339.15234375,
+          50.165771484375
         ],
         [
-          452.07421875,
-          35.48583984375
+          450.9140625,
+          50.165771484375
         ],
         [
-          452.07421875,
-          47.6630859375
+          450.9140625,
+          61.521240234375
         ],
         [
-          340.69921875,
-          47.6630859375
+          339.15234375,
+          61.521240234375
+        ]
+      ]
+    },
+    {
+      "title": "Measure lengths.",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          38.9619140625,
+          50.6513671875
+        ],
+        [
+          125.3935546875,
+          50.6513671875
+        ],
+        [
+          125.3935546875,
+          62.23095703125
+        ],
+        [
+          38.9619140625,
+          62.23095703125
         ]
       ]
     },
     {
       "title": "Geometry",
       "heading_level": null,
-      "page_id": 18,
-      "polygon": [
-        [
-          370.86328125,
-          36.08349609375
-        ],
-        [
-          420.75,
-          36.08349609375
-        ],
-        [
-          420.75,
-          47.513671875
-        ],
-        [
-          370.86328125,
-          47.513671875
-        ]
-      ]
-    },
-    {
-      "title": "Return to Standards",
-      "heading_level": null,
-      "page_id": 20,
-      "polygon": [
-        [
-          666.5800170898438,
-          417.1640625
-        ],
-        [
-          756.03515625,
-          417.1640625
-        ],
-        [
-          756.03515625,
-          427.921875
-        ],
-        [
-          666.5800170898438,
-          427.921875
-        ]
-      ]
-    },
-    {
-      "title": "Analyze, compare, create, and compose shapes.",
-      "heading_level": null,
-      "page_id": 21,
-      "polygon": [
-        [
-          38.7685546875,
-          37.2227783203125
-        ],
-        [
-          271.4765625,
-          37.2227783203125
-        ],
-        [
-          271.4765625,
-          48.671630859375
-        ],
-        [
-          38.7685546875,
-          48.671630859375
-        ]
-      ]
-    },
-    {
-      "title": "Analyze, compare, create, and compose shapes.",
-      "heading_level": null,
       "page_id": 22,
       "polygon": [
         [
-          38.5751953125,
-          36.942626953125
+          370.669921875,
+          49.904296875
         ],
         [
-          272.63671875,
-          36.942626953125
+          420.75,
+          49.904296875
         ],
         [
-          272.63671875,
-          48.148681640625
+          420.75,
+          61.78271484375
         ],
         [
-          38.5751953125,
-          48.148681640625
+          370.669921875,
+          61.78271484375
         ]
       ]
     },
     {
-      "title": "",
+      "title": "Reason with shapes and their attributes",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          38.14013671875,
+          50.72607421875
+        ],
+        [
+          233.771484375,
+          50.72607421875
+        ],
+        [
+          233.771484375,
+          62.52978515625
+        ],
+        [
+          38.14013671875,
+          62.52978515625
+        ]
+      ]
+    },
+    {
+      "title": "Reason with shapes and their attributes\nNC.1.G.3 Partition circles and rectangles into two and four equal shares.\n\u00b7 Describe the shares as halves and fourths, as half of and fourth of.\n\u00b7 Describe the whole as two of, or four of the shares.\n Explain that decomposing into more equal shares creates smaller shares\n.\nClarification\nChecking for Understanding\nIn this standard, students will be able to partition rectangles and circles of\n How can you and a friend share equally (partition) this piece of paper so that\nyou both have the same amount of paper to paint a picture?\nvarious sizes into halves and fourths. Students should recognize that when\nsomething is cut into two equal pieces, each piece will equal one-half of its\noriginal whole. Students should also recognize that halves of two different\nwholes are not necessarily the same size, and thev should understand that\ndecomposing equal shares into more equal shares results in smaller equal\nshares.\nStudents should partition reqions into equal shares using a context (e.q.,\nPossible responses:\ncookies, pies, pizza). Through experiences with multiple representations,\nStudent A\nStudent B\nstudents should use the words, halves and fourths, and the phrases half of\nI would split the paper right down the\nI would split it from corner to corner\nmiddle.  That gives us 2 halves.  I\nand fourth of to describe their thinking and solutions. Working with the \"the\n(diagonally).  She gets half of the\nwhole\", students understand that \"the whole\" is composed of two halves or\nhave half of the paper and my friend\npaper and I get half of the paper.\nfour fourths.\nhas the other half of the paper.\nSee, if we cut on the line, the parts\nare the same size.\nYou can have only one slice of pizza. Which pizza should you pick your slice\nfrom if you want the biggest piece of pizza? The pizzas are the same size and\nare each divided into equal pieces. Explain how you know.\nPossible response:\nl would get more pizza if I took a\nslice from the pizza that is cut\ninto two equal parts. The more\nequal slices there are, the\nsmaller the pieces get. I\nwouldn't get as much pizza if l\nonly got a fourth of the pizza\ninstead of half of the pizza.\nReturn to Standards",
       "heading_level": null,
       "page_id": 24,
       "polygon": [
         [
-          142.69921875,
-          48.33544921875
+          34.8046875,
+          48.41015625
         ],
         [
-          643.88671875,
-          48.33544921875
+          759.515625,
+          48.41015625
         ],
         [
-          643.88671875,
-          84.34423828125
+          759.515625,
+          558.75
         ],
         [
-          142.69921875,
-          84.34423828125
+          34.8046875,
+          558.75
+        ]
+      ]
+    },
+    {
+      "title": "Addition/Subtraction Problem Types",
+      "heading_level": null,
+      "page_id": 25,
+      "polygon": [
+        [
+          145.986328125,
+          62.0068359375
+        ],
+        [
+          640.40625,
+          62.0068359375
+        ],
+        [
+          640.40625,
+          95.923828125
+        ],
+        [
+          145.986328125,
+          95.923828125
         ]
       ]
     }
@@ -510,14 +533,14 @@
   "page_stats": [
     {
       "page_id": 0,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          52
+          "Line",
+          19
         ],
         [
-          "Line",
+          "Span",
           19
         ],
         [
@@ -541,27 +564,27 @@
     },
     {
       "page_id": 1,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          108
+          "Line",
+          45
         ],
         [
-          "Line",
-          48
+          "Span",
+          45
+        ],
+        [
+          "Text",
+          4
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "Table",
-          1
-        ],
-        [
-          "Text",
-          1
+          "SectionHeader",
+          2
         ]
       ],
       "block_metadata": {
@@ -572,15 +595,15 @@
     },
     {
       "page_id": 2,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          138
+          "Line",
+          70
         ],
         [
-          "Line",
-          58
+          "Span",
+          70
         ],
         [
           "PageFooter",
@@ -603,15 +626,15 @@
     },
     {
       "page_id": 3,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          52
+          "Line",
+          27
         ],
         [
-          "Line",
-          20
+          "Span",
+          27
         ],
         [
           "PageFooter",
@@ -634,19 +657,15 @@
     },
     {
       "page_id": 4,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          90
-        ],
-        [
           "Line",
-          34
+          99
         ],
         [
-          "Text",
-          3
+          "Span",
+          99
         ],
         [
           "PageFooter",
@@ -654,14 +673,10 @@
         ],
         [
           "SectionHeader",
-          2
+          1
         ],
         [
           "Table",
-          2
-        ],
-        [
-          "ListItem",
           1
         ]
       ],
@@ -673,26 +688,38 @@
     },
     {
       "page_id": 5,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          61
+          "Line",
+          39
         ],
         [
-          "Line",
-          25
+          "Span",
+          39
+        ],
+        [
+          "ListItem",
+          3
         ],
         [
           "PageFooter",
-          2
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
         ],
         [
           "Table",
           1
         ],
         [
-          "Text",
+          "ListGroup",
           1
         ]
       ],
@@ -704,101 +731,15 @@
     },
     {
       "page_id": 6,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          147
-        ],
-        [
           "Line",
-          50
+          44
         ],
-        [
-          "Text",
-          3
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "ListItem",
-          2
-        ],
-        [
-          "SectionHeader",
-          1
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "ListGroup",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 7,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
         [
           "Span",
-          154
-        ],
-        [
-          "Line",
-          55
-        ],
-        [
-          "ListItem",
-          4
-        ],
-        [
-          "PageFooter",
-          4
-        ],
-        [
-          "SectionHeader",
-          1
-        ],
-        [
-          "Text",
-          1
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "ListGroup",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 8,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          140
-        ],
-        [
-          "Line",
-          60
+          44
         ],
         [
           "PageFooter",
@@ -806,45 +747,6 @@
         ],
         [
           "Text",
-          2
-        ],
-        [
-          "Table",
-          2
-        ],
-        [
-          "SectionHeader",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 9,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          88
-        ],
-        [
-          "Line",
-          33
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Text",
-          2
-        ],
-        [
-          "ListItem",
           2
         ],
         [
@@ -856,11 +758,96 @@
           1
         ],
         [
-          "Form",
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          66
+        ],
+        [
+          "Span",
+          66
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Table",
           1
         ],
         [
-          "ListGroup",
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          60
+        ],
+        [
+          "Span",
+          60
+        ],
+        [
+          "PageFooter",
+          4
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          36
+        ],
+        [
+          "Span",
+          36
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
           1
         ]
       ],
@@ -872,34 +859,34 @@
     },
     {
       "page_id": 10,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          164
+          "Line",
+          117
         ],
         [
-          "Line",
-          70
+          "Span",
+          117
         ],
         [
           "Text",
-          3
-        ],
-        [
-          "Table",
-          3
-        ],
-        [
-          "PageFooter",
-          3
+          7
         ],
         [
           "ListItem",
-          2
+          6
         ],
         [
           "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Table",
           1
         ],
         [
@@ -915,35 +902,23 @@
     },
     {
       "page_id": 11,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          96
+          "Line",
+          77
         ],
         [
-          "Line",
-          32
+          "Span",
+          77
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "Text",
-          2
-        ],
-        [
-          "PageHeader",
-          1
-        ],
-        [
-          "SectionHeader",
-          1
-        ],
-        [
           "Table",
-          1
+          2
         ]
       ],
       "block_metadata": {
@@ -954,30 +929,26 @@
     },
     {
       "page_id": 12,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          78
+          "Line",
+          56
         ],
         [
-          "Line",
-          29
+          "Span",
+          56
         ],
         [
           "PageFooter",
-          3
-        ],
-        [
-          "Text",
-          2
+          4
         ],
         [
           "SectionHeader",
           1
         ],
         [
-          "Form",
+          "Table",
           1
         ]
       ],
@@ -989,22 +960,38 @@
     },
     {
       "page_id": 13,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          89
+          "Line",
+          63
         ],
         [
-          "Line",
-          34
+          "Span",
+          63
+        ],
+        [
+          "ListItem",
+          3
         ],
         [
           "PageFooter",
           3
         ],
         [
-          "Table",
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Form",
+          1
+        ],
+        [
+          "ListGroup",
           1
         ]
       ],
@@ -1016,15 +1003,15 @@
     },
     {
       "page_id": 14,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          95
+          "Line",
+          29
         ],
         [
-          "Line",
-          36
+          "Span",
+          29
         ],
         [
           "PageFooter",
@@ -1047,30 +1034,34 @@
     },
     {
       "page_id": 15,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          83
+          "Line",
+          47
         ],
         [
-          "Line",
-          31
+          "Span",
+          47
         ],
         [
           "PageFooter",
           3
         ],
         [
+          "Text",
+          2
+        ],
+        [
           "SectionHeader",
           1
         ],
         [
-          "Table",
+          "ListItem",
           1
         ],
         [
-          "Text",
+          "Table",
           1
         ]
       ],
@@ -1082,205 +1073,15 @@
     },
     {
       "page_id": 16,
-      "text_extraction_method": "pdftext",
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          142
-        ],
-        [
           "Line",
-          56
+          138
         ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Table",
-          2
-        ],
-        [
-          "SectionHeader",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 17,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
         [
           "Span",
-          88
-        ],
-        [
-          "Line",
-          36
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Table",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 18,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          67
-        ],
-        [
-          "Line",
-          22
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "SectionHeader",
-          1
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "Text",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 19,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          39
-        ],
-        [
-          "Line",
-          15
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "Text",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 20,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          33
-        ],
-        [
-          "Line",
-          12
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Table",
-          1
-        ],
-        [
-          "SectionHeader",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 21,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          88
-        ],
-        [
-          "Line",
-          35
-        ],
-        [
-          "PageFooter",
-          3
-        ],
-        [
-          "Text",
-          2
-        ],
-        [
-          "SectionHeader",
-          1
-        ],
-        [
-          "Table",
-          1
-        ]
-      ],
-      "block_metadata": {
-        "llm_request_count": 0,
-        "llm_error_count": 0,
-        "llm_tokens_used": 0
-      }
-    },
-    {
-      "page_id": 22,
-      "text_extraction_method": "pdftext",
-      "block_counts": [
-        [
-          "Span",
-          56
-        ],
-        [
-          "Line",
-          21
+          138
         ],
         [
           "PageFooter",
@@ -1314,16 +1115,16 @@
       }
     },
     {
-      "page_id": 23,
-      "text_extraction_method": "pdftext",
+      "page_id": 17,
+      "text_extraction_method": "surya",
       "block_counts": [
         [
-          "Span",
-          52
+          "Line",
+          34
         ],
         [
-          "Line",
-          21
+          "Span",
+          34
         ],
         [
           "PageFooter",
@@ -1345,12 +1146,261 @@
       }
     },
     {
-      "page_id": 24,
-      "text_extraction_method": "pdftext",
+      "page_id": 18,
+      "text_extraction_method": "surya",
       "block_counts": [
         [
+          "Line",
+          50
+        ],
+        [
           "Span",
-          6
+          50
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 19,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          42
+        ],
+        [
+          "Span",
+          42
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 20,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          39
+        ],
+        [
+          "Span",
+          39
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Form",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 21,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          52
+        ],
+        [
+          "Span",
+          52
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Table",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 22,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          45
+        ],
+        [
+          "Span",
+          45
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          34
+        ],
+        [
+          "Span",
+          34
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 24,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          51
+        ],
+        [
+          "Span",
+          51
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 25,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          98
+        ],
+        [
+          "Span",
+          98
         ],
         [
           "PageFooter",
@@ -1367,10 +1417,6 @@
         [
           "Table",
           1
-        ],
-        [
-          "Line",
-          1
         ]
       ],
       "block_metadata": {
@@ -1380,5 +1426,5 @@
       }
     }
   ],
-  "debug_data_path": "debug_data/K-math-clarification"
+  "debug_data_path": "debug_data/1st-math-unpacking"
 }
