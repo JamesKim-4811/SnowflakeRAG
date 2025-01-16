@@ -32,7 +32,7 @@ CORTEX_SEARCH_SERVICE = "SEMANTIC_CORTEX_SEARCH_SERVICE"
 COLUMNS = [
     "doc_text",
     "relative_path",
-    "category"
+    "subject"
 ]
 
 @st.cache_resource
@@ -58,26 +58,15 @@ svc = root.databases[CORTEX_SEARCH_DATABASE].schemas[CORTEX_SEARCH_SCHEMA].corte
      
 def config_options():
 
-    st.sidebar.selectbox('Select your model:',(
-                                    'mistral-large2',
-                                     ), key="model_name")
+    st.session_state.model_name = 'mistral-large2'
 
-    categories = session.table('education_docs').select('category').distinct().collect()
+    st.session_state.use_docs = True
 
-    cat_list = ['ALL']
-    for cat in categories:
-        cat_list.append(cat.CATEGORY)
-            
-    st.sidebar.selectbox('Select what products you are looking for', cat_list, key = "category_value")
-
-    st.sidebar.checkbox('Use your own documents as context?', key="use_docs", value = True)
-
-    st.sidebar.checkbox('Do you want that I remember the chat history?', key="use_chat_history", value = True)
-
+    st.session_state.use_chat_history = True
     st.sidebar.checkbox('Debug: Click to see summary generated of previous conversation', key="debug", value = True)
     st.sidebar.button("Start Over", key="clear_conversation", on_click=init_messages)
     st.sidebar.expander("Session State").write(st.session_state)
-
+    
 def init_messages():
 
     # Initialize chat history
@@ -86,13 +75,24 @@ def init_messages():
 
 def get_similar_chunks_search_service(query):
 
-    if st.session_state.category_value == "ALL":
+    filters = {}
+    
+    # Filter by subject if a subject is selected (not "ALL")
+    if st.session_state.subject_value:
+        filters["@eq"] = {"subject": st.session_state.subject_value}
+    
+    # Filter by grade if a grade is selected
+    if st.session_state.grade_value:
+        filters["@eq"] = {"grade": st.session_state.grade_value}
+    
+    # Combine both filters (subject and grade) if both are present
+    if filters:
+        response = svc.search(query, COLUMNS, filter=filters, limit=NUM_CHUNKS)
+    else:
         response = svc.search(query, COLUMNS, limit=NUM_CHUNKS)
-    else: 
-        filter_obj = {"@eq": {"category": st.session_state.category_value} }
-        response = svc.search(query, COLUMNS, filter=filter_obj, limit=NUM_CHUNKS)
-
-    st.sidebar.json(response.model_dump_json())
+    
+    with st.sidebar.expander("chunks"):
+        st.json(response.model_dump_json())
     
     return response.model_dump_json()  
 
@@ -124,11 +124,10 @@ def summarize_question_with_history(chat_history, question):
         </question>
         """
     
-    sumary = Complete(st.session_state.model_name, prompt)   
+    sumary = Complete(st.session_state.model_name, prompt, session=session)   
 
     if st.session_state.debug:
-        st.sidebar.text("Summary to be used to find similar chunks in the docs:")
-        st.sidebar.caption(sumary)
+        st.sidebar.expander("Summary to be used to find similar chunks in the docs:").write(sumary)
 
     sumary = sumary.replace("'", "")
 
@@ -216,59 +215,73 @@ def answer_question(myquestion):
 
     prompt, relative_paths =create_prompt (myquestion)
 
-    response = Complete(st.session_state.model_name, prompt)   
+    response = Complete(st.session_state.model_name, prompt, session=session)   
 
     return response, relative_paths
 
+def generate_quiz():
+    subject = st.session_state.subject_value
+    grade = st.session_state.grade_value
+    
+    # Construct the prompt to generate a quiz
+    prompt = f"""
+    Generate a set of 5 quiz questions for {subject} at {grade} level.
+    Include the questions along with possible answer options. 
+    Provide the correct answer at the end of each question.
+    """
+
+    # Send the prompt to the model (Cortex)
+    with st.chat_message("assistant"):
+            message_placeholder = st.empty()
+
+            with st.spinner(f"{st.session_state.model_name} thinking..."):
+                response, relative_paths = answer_question(prompt)            
+                response = response.replace("'", "")
+
+                with st.sidebar.expander("Related Documents"):
+                    for path in relative_paths:
+                        cmd2 = f"""
+                        SELECT DISTINCT FILE_URL 
+                        FROM table('education_docs') 
+                        WHERE relative_path = '{path}' 
+                        """
+                        df_url_link = session.sql(cmd2).to_pandas()
+                        url_link = df_url_link._get_value(0,'FILE_URL')
+                        display_url = f"Doc: [{path}]({url_link})"
+                        
+                        st.write(display_url)
+    st.session_state.messages.append({"role": "assistant", "content": response})
+
+    # Display the generated quiz
+    st.subheader(f"Generated Quiz for {subject} ({grade})")
+    st.markdown(response)
+    
 def main():
     
-    st.title(f":speech_balloon: Chat Document Assistant with Snowflake Cortex")
-    st.write("This is the list of documents you already have and that will be used to answer your questions:")
-    docs_available = session.sql("ls @docs").collect()
-    list_docs = []
-    for doc in docs_available:
-        list_docs.append(doc["name"])
-    st.dataframe(list_docs)
+    st.title(f":speech_balloon: Quiz Generator with Snowflake Cortex")
+
+    grades = session.table('education_docs').select('grade').distinct().collect()
+    grades_list = ['ALL']
+    for grade in grades:
+        grades_list.append(grade.GRADE)        
+    st.selectbox('Select a grade', grades_list, key = "grade_value")
+
+    subjects = session.table('education_docs').select('subject').distinct().collect()
+    sub_list = ['ALL']
+    for sub in subjects:
+        sub_list.append(sub.SUBJECT)
+    st.selectbox('Select a subject to test', sub_list, key = "subject_value")
+
+    st.button("Generate Quiz", on_click=generate_quiz)
 
     config_options()
+    # st.sidebar.button("Generate Quiz", on_click=generate_quiz)
     init_messages()
-     
-    # Display chat messages from history on app rerun
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
     
-    # Accept user input
-    if question := st.chat_input("What do you want to know about your products?"):
-        # Add user message to chat history
-        st.session_state.messages.append({"role": "user", "content": question})
-        # Display user message in chat message container
-        with st.chat_message("user"):
-            st.markdown(question)
-        # Display assistant response in chat message container
-        with st.chat_message("assistant"):
-            message_placeholder = st.empty()
-    
-            question = question.replace("'","")
-    
-            with st.spinner(f"{st.session_state.model_name} thinking..."):
-                response, relative_paths = answer_question(question)            
-                response = response.replace("'", "")
-                message_placeholder.markdown(response)
-
-                if relative_paths != "None":
-                    with st.sidebar.expander("Related Documents"):
-                        for path in relative_paths:
-                            cmd2 = f"select GET_PRESIGNED_URL(@docs, '{path}', 360) as URL_LINK from directory(@docs)"
-                            df_url_link = session.sql(cmd2).to_pandas()
-                            url_link = df_url_link._get_value(0,'URL_LINK')
-                
-                            display_url = f"Doc: [{path}]({url_link})"
-                            st.sidebar.markdown(url_link)
-                            st.sidebar.markdown(display_url)
+   
+                            
 
         
-        st.session_state.messages.append({"role": "assistant", "content": response})
 
 
 if __name__ == "__main__":

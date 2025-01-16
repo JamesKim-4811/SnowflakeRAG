@@ -32,7 +32,8 @@ CORTEX_SEARCH_SERVICE = "SEMANTIC_CORTEX_SEARCH_SERVICE"
 COLUMNS = [
     "doc_text",
     "relative_path",
-    "category"
+    "subject",
+    "file_url"
 ]
 
 @st.cache_resource
@@ -62,13 +63,13 @@ def config_options():
                                     'mistral-large2',
                                      ), key="model_name")
 
-    categories = session.table('education_docs').select('category').distinct().collect()
+    subjects = session.table('education_docs').select('subject').distinct().collect()
 
-    cat_list = ['ALL']
-    for cat in categories:
-        cat_list.append(cat.CATEGORY)
+    sub_list = ['ALL']
+    for sub in subjects:
+        sub_list.append(sub.SUBJECT)
             
-    st.sidebar.selectbox('Select what products you are looking for', cat_list, key = "category_value")
+    st.sidebar.selectbox('Select what products you are looking for', sub_list, key = "subject_value")
 
     st.sidebar.checkbox('Use your own documents as context?', key="use_docs", value = True)
 
@@ -86,10 +87,10 @@ def init_messages():
 
 def get_similar_chunks_search_service(query):
 
-    if st.session_state.category_value == "ALL":
+    if st.session_state.subject_value == "ALL":
         response = svc.search(query, COLUMNS, limit=NUM_CHUNKS)
     else: 
-        filter_obj = {"@eq": {"category": st.session_state.category_value} }
+        filter_obj = {"@eq": {"subject": st.session_state.subject_value} }
         response = svc.search(query, COLUMNS, filter=filter_obj, limit=NUM_CHUNKS)
 
     st.sidebar.json(response.model_dump_json())
@@ -124,7 +125,7 @@ def summarize_question_with_history(chat_history, question):
         </question>
         """
     
-    sumary = Complete(st.session_state.model_name, prompt)   
+    sumary = Complete(st.session_state.model_name, prompt, session=session)   
 
     if st.session_state.debug:
         st.sidebar.text("Summary to be used to find similar chunks in the docs:")
@@ -216,14 +217,13 @@ def answer_question(myquestion):
 
     prompt, relative_paths =create_prompt (myquestion)
 
-    response = Complete(st.session_state.model_name, prompt)   
+    response = Complete(st.session_state.model_name, prompt, session=session)   
 
     return response, relative_paths
 
 def main():
     
     st.title(f":speech_balloon: Chat Document Assistant with Snowflake Cortex")
-    st.write("This is the list of documents you already have and that will be used to answer your questions:")
     docs_available = session.sql("ls @docs").collect()
     list_docs = []
     for doc in docs_available:
@@ -259,13 +259,17 @@ def main():
                 if relative_paths != "None":
                     with st.sidebar.expander("Related Documents"):
                         for path in relative_paths:
-                            cmd2 = f"select GET_PRESIGNED_URL(@docs, '{path}', 360) as URL_LINK from directory(@docs)"
+                            cmd2 = f"""
+                            SELECT DISTINCT FILE_URL 
+                            FROM table('education_docs') 
+                            WHERE relative_path = '{path}' 
+                            """
                             df_url_link = session.sql(cmd2).to_pandas()
-                            url_link = df_url_link._get_value(0,'URL_LINK')
-                
+                            url_link = df_url_link._get_value(0,'FILE_URL')
                             display_url = f"Doc: [{path}]({url_link})"
-                            st.sidebar.markdown(url_link)
+                            
                             st.sidebar.markdown(display_url)
+                            
 
         
         st.session_state.messages.append({"role": "assistant", "content": response})
